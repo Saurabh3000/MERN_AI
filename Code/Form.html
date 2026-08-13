@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is a Form Demo</h1>
+
+         <form action="/submit" method="POST">
+               
+            <label for="username">UserName : </label>
+            <input type="text" id="username" name="username">
+            <br>
+
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password">
+            <br>
+
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" value="male">Male
+            <br>
+            <input type="radio" name="gender" value="female">Female
+            <br>
+
+            <label for="interest">Interested in</label>
+            <input type="checkbox" name="interest" value="Sports">Sports
+            <br>
+            <input type="checkbox" name="interest" value="Music">Music
+            <br>
+            <input type="checkbox" name="interest" value="Travelling">Travelling
+            <br>
+
+            <label for="country">Country :</label>
+            <select name="country" id="country">
+                   <option value="UK">UK</option>
+                   <option value="USA">USA</option>
+                   <option value="INDIA">INDIA</option>
+                   <option value="Australia">Australia</option>
+
+            </select>
+            <br> 
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> 
+         </form>
+</body>
+</html>
