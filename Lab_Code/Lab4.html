@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body {
+        font-family: Arial;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 30px;
+    }
+    .form-container {
+        max-width: 420px;
+        margin: 0 auto;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 25px 30px 35px;
+    }
+    h1 {
+        text-align: center;
+        color: #1a1aff;
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: inherit;
+    }
+    select {
+        background-color: white;
+        color: #555;
+    }
+    
+    .option {
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+    .option input {
+        margin-right: 6px;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 70px;
+        margin-bottom: 20px;
+    }
+    button {
+        display: block;
+        width: 100%;
+        background-color: #1976f0;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 3px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+</style>
+
+</head>
+<body>
+    <div class="form-container">
+    <h1>Survey Form</h1>
+
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="number" name="age" placeholder="Enter your age" required>
+
+        <select name="role">
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="other">Other</option>
+        </select>
+
+        <section>
+            <p>Would you recommend this survey form to a friend?</p>
+            <div class="option">
+                <input type="radio" id="recommend-yes" name="recommend" value="yes">
+                <label for="recommend-yes">Yes</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="recommend-no" name="recommend" value="no">
+                <label for="recommend-no">No</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="recommend-maybe" name="recommend" value="maybe">
+                <label for="recommend-maybe">Maybe</label>
+            </div>
+        </section>
+
+        <section>
+            <p>Languages and Frameworks known <span>(Check all that apply)</span></p>
+            <div class="option">
+                <input type="checkbox" id="lang-java" name="languages" value="java">
+                <label for="lang-java">Java</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="lang-python" name="languages" value="python">
+                <label for="lang-python">Python</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="lang-react" name="languages" value="react">
+                <label for="lang-react">React</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="lang-angular" name="languages" value="angular">
+                <label for="lang-angular">Angular</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="lang-spring" name="languages" value="spring">
+                <label for="lang-spring">Spring</label>
+            </div>
+        </section>
+
+        <label for="comments"><h3>Any comments or suggestions</h3></label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+</body>
+</html>
